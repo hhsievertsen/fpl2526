@@ -3,6 +3,8 @@
 
 ## About
 
+2025-08-27: Updated player data
+
 2025-08-22: Here I share data on the FPL 2025/26 season. So far I have
 not found a solution to get data on all 10 000 000 players. Instead I am
 collecting data on 100 000 randomly selected players. Please let me know
