@@ -3,6 +3,8 @@
 
 ## About
 
+2025-09-12: Updated player data and GW player (including GW3)
+
 2025-09-07: Updated player data and GW player
 
 2025-08-27: Updated player data
@@ -62,7 +64,7 @@ library("ggplot2")
 df_players<-arrow::read_parquet("/Users/hhs/Dropbox/Bucket/fpl2526/data/players.parquet")
 
 # Create chart
-ggplot(df_players[df_players$web_name%in%c("Semenyo","Ekitiké","Gyökeres"),],  
+ggplot(df_players[df_players$web_name%in%c("Semenyo","Ekitiké","Isak"),],  
       aes(x=time,y=selected_by_percent))+
     facet_wrap(~web_name)+
     geom_line()+
