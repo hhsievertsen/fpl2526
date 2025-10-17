@@ -12,7 +12,9 @@ execute:
 ## About
 
 
-2025-10-12: Updated player data. Data break from October 5 to October 12, as server crashed. 
+2025-10-12: Updated player data and gw data (up to gw6).
+
+2025-10-12: Updated player data. Data break from October 5 to October 15, as server crashed. 
 
 2025-09-12: Updated player data and GW player (including GW3) 
 
@@ -110,7 +112,7 @@ df_leagues[df_leagues$fplid==6708968,]
 
 ```{r}
 # Load data 
-df_teams<-arrow::read_parquet("/Users/hhs/Dropbox/Bucket/fpl2526/data/fpl_teams_gw3.parquet")
+df_teams<-arrow::read_parquet("/Users/hhs/Dropbox/Bucket/fpl2526/data/fpl_teams_gw6.parquet")
 
 # Check data
 df_teams[df_teams$fpl_entry_id==6708968,]

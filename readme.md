@@ -3,8 +3,10 @@
 
 ## About
 
+2025-10-12: Updated player data and gw data (up to gw6).
+
 2025-10-12: Updated player data. Data break from October 5 to October
-12, as server crashed.
+15, as server crashed.
 
 2025-09-12: Updated player data and GW player (including GW3)
 
@@ -122,44 +124,44 @@ df_leagues[df_leagues$fplid==6708968,]
 
 ``` r
 # Load data 
-df_teams<-arrow::read_parquet("/Users/hhs/Dropbox/Bucket/fpl2526/data/fpl_teams_gw3.parquet")
+df_teams<-arrow::read_parquet("/Users/hhs/Dropbox/Bucket/fpl2526/data/fpl_teams_gw6.parquet")
 
 # Check data
 df_teams[df_teams$fpl_entry_id==6708968,]
 ```
 
-        id           playername position multiplier is_captain is_vice_captain
-    16 470      Martin Dúbravka       12          0      FALSE           FALSE
-    17 502            Matz Sels        1          1      FALSE           FALSE
-    18 348            Joe Rodon       15          0      FALSE           FALSE
-    19 402      Rayan Aït-Nouri        5          1      FALSE           FALSE
-    20 477      Tino Livramento        4          1      FALSE           FALSE
-    21 505    Nikola Milenković        2          1      FALSE           FALSE
-    22 568  Pedro Porro Sauceda        3          1      FALSE           FALSE
-    23  82      Antoine Semenyo        6          1      FALSE            TRUE
-    24 211         Aaron Ramsey       14          0      FALSE           FALSE
-    25 266         Eberechi Eze        9          1      FALSE           FALSE
-    26 381        Mohamed Salah        8          1      FALSE           FALSE
-    27 427    Tijjani Reijnders        7          1      FALSE           FALSE
-    28 525           Chris Wood       10          2       TRUE           FALSE
-    29 654 Jørgen Strand Larsen       13          0      FALSE           FALSE
-    30 666      Viktor Gyökeres       11          1      FALSE           FALSE
-       event entry     NA. gw fpl_entry_id
-    16     1     3 6708968  1      6708968
-    17     1     3 6708968  1      6708968
-    18     2     3 6708968  1      6708968
-    19     2     3 6708968  1      6708968
-    20     2     3 6708968  1      6708968
-    21     2     3 6708968  1      6708968
-    22     2     3 6708968  1      6708968
-    23     3     3 6708968  1      6708968
-    24     3     3 6708968  1      6708968
-    25     3     3 6708968  1      6708968
-    26     3     3 6708968  1      6708968
-    27     3     3 6708968  1      6708968
-    28     4     3 6708968  1      6708968
-    29     4     3 6708968  1      6708968
-    30     4     3 6708968  1      6708968
+        id                    playername position multiplier is_captain
+    16   1             David Raya Martín        1          1      FALSE
+    17 470               Martin Dúbravka       12          0      FALSE
+    18   5  Gabriel dos Santos Magalhães        3          1      FALSE
+    19  72           Marcos Senesi Barón        4          1      FALSE
+    20 291               James Tarkowski       14          0      FALSE
+    21 348                     Joe Rodon       15          0      FALSE
+    22 575              Micky van de Ven        2          1      FALSE
+    23  82               Antoine Semenyo        5          1      FALSE
+    24 299                 Iliman Ndiaye        8          1      FALSE
+    25 390              Ryan Gravenberch       13          0      FALSE
+    26 427             Tijjani Reijnders        6          1      FALSE
+    27 449        Bruno Borges Fernandes        7          1      FALSE
+    28 249 João Pedro Junqueira de Jesus       10          1      FALSE
+    29 430                Erling Haaland        9          2       TRUE
+    30 666               Viktor Gyökeres       11          1      FALSE
+       is_vice_captain event entry     NA. gw fpl_entry_id
+    16           FALSE     1     6 6708968  1      6708968
+    17           FALSE     1     6 6708968  1      6708968
+    18           FALSE     2     6 6708968  1      6708968
+    19           FALSE     2     6 6708968  1      6708968
+    20           FALSE     2     6 6708968  1      6708968
+    21           FALSE     2     6 6708968  1      6708968
+    22           FALSE     2     6 6708968  1      6708968
+    23           FALSE     3     6 6708968  1      6708968
+    24           FALSE     3     6 6708968  1      6708968
+    25           FALSE     3     6 6708968  1      6708968
+    26           FALSE     3     6 6708968  1      6708968
+    27            TRUE     3     6 6708968  1      6708968
+    28           FALSE     4     6 6708968  1      6708968
+    29           FALSE     4     6 6708968  1      6708968
+    30           FALSE     4     6 6708968  1      6708968
 
 #### Points
 
