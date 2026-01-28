@@ -10,13 +10,15 @@ folder_path <- "/Users/hhs/Dropbox"
 file_list <- list.files(path = folder_path, pattern = "\\.csv$", full.names = TRUE)
 
 # Read and combine
-df <- rbindlist(lapply(file_list, fread))
+df <- rbindlist(lapply(file_list, fread),fill = TRUE)
 
 
 #Load
 old<-read_parquet("/Users/hhs/Dropbox/Bucket/fpl2526/data/players.parquet")
 
-
 # Save
+dfcombined<-rbind(df,old)
 
-write_parquet(rbind(df,old),"/Users/hhs/Dropbox/Bucket/fpl2526/data/players.parquet")
+dfcombined<-unique(dfcombined)
+
+write_parquet(dfcombined,"/Users/hhs/Dropbox/Bucket/fpl2526/data/players.parquet")
