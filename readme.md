@@ -3,6 +3,8 @@
 
 ## About
 
+2026-01-29: Updated player data 
+
 2025-10-12: Updated player data and gw data (up to gw6).
 
 2025-10-12: Updated player data. Data break from October 5 to October
